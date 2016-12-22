@@ -1,0 +1,30 @@
+{
+  "name": "ydapp4",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "15.4.1",
+    "react-native": "0.39.2",
+    "react-native-drawer": "^2.3.0",
+    "react-native-keyboard-spacer": "^0.3.1",
+    "react-native-scrollable-tab-view": "^0.6.0",
+    "react-native-side-menu": "^0.20.1",
+    "react-native-vector-icons": "^3.0.0",
+    "react-redux": "^4.4.5",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-jest": "18.0.0",
+    "babel-preset-react-native": "1.9.1",
+    "jest": "18.0.0",
+    "react-test-renderer": "15.4.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
