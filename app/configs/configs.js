@@ -5,7 +5,7 @@
  */
 
 // 首页api地址
-export const INDEX_LIST_API = {name: '能源评论', url: 'http://112.124.18.75/api/get_recent_posts/?exclude=content,excerpt,comments,attachments'};
+export const INDEX_LIST_API = {name: '英大金融', url: 'http://112.124.18.75/api/get_recent_posts/?exclude=content,excerpt,comments,attachments'};
 
 // 分类列表api地址
 export const CATEGORY_LIST_API = 'http://112.124.18.75/api/get_category_index/';

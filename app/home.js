@@ -67,7 +67,7 @@ export default class Home extends Component
 					<View style={styles.container}>
 						<View style={styles.topnav}>
 							<TouchableOpacity style={styles.navleft} onPress={() => this.drawer.open(true)} ><Icon name="ellipsis-v" size={24} color="#fff" /></TouchableOpacity>
-							<Text style={styles.navtit}>能源评论</Text>
+							<Text style={styles.navtit}>英大金融</Text>
 							<TouchableOpacity style={styles.navright} onPress={() => this.props.navigator.push({name:'searchPage'})}><Icon name="search" size={24} color="#fff" /></TouchableOpacity>
 						</View>
 

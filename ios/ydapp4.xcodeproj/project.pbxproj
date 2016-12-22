@@ -856,7 +856,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.drimk.yd.rypl;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ydcm.ydjr;
 				PRODUCT_NAME = ydapp4;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -878,7 +878,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.drimk.yd.rypl;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ydcm.ydjr;
 				PRODUCT_NAME = ydapp4;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
