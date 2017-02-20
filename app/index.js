@@ -23,6 +23,7 @@ import HomePage from "./home";
 import LoginPage from "./login";
 import RegisterPage from "./register";
 import SearchPage from "./search";
+import PersonalPage from "./personal";
 
 const store = configureStore();
 
@@ -104,6 +105,10 @@ class App extends Component
 		if (route.name == 'searchPage') {
             return <SearchPage {...route.params} navigator={navigator} />
         }
+
+        if (route.name == 'personalPage') {
+                return <PersonalPage {...route.params} navigator={navigator} />
+            }
 
 		/*
         // 启动图页

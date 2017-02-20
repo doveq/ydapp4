@@ -85,9 +85,11 @@ export default class sideMenu extends Component
             login = null;
             reg = null;
             uinfo = <View style={styles.item} key={9997} >
+                      <TouchableOpacity onPress={() => this.props.navigator.push({name:'personalPage'})} >
                       <Text style={styles.itemStr}>
                           <Icon name="user" size={18} color="#fff" />    {this.state.username}
                       </Text>
+                      </TouchableOpacity>
                     </View>;
 
             logout = <View style={styles.item} key={9996} >
