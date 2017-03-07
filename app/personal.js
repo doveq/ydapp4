@@ -88,7 +88,7 @@ export default class Personal extends Component
     {
         this.setState({ isSubmit:true });
         // 31536000 设置一年的过期时间
-        let reg = "http://112.124.18.75/my-user.php?act=update"
+        let reg = "http://112.124.18.75/my-user.php?site=ydjr&act=update"
                     +"&name="+ this.state.username
                     +"&email="+ this.state.email
                     +"&passwd="+ this.state.passwd

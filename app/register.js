@@ -105,6 +105,14 @@ export default class Register extends Component
                         } else {
                             // 注册成功保存登入信息
                             let info = {uid:data.user_id, cookie:data.cookie, username:this.state.name, displayname:this.state.name, email:this.state.email};
+
+                            // 设置账号对应到英大金融站点
+                            let xurl = "http://112.124.18.75/my-user.php?upstie="+ data.user_id;
+                            fetch(xurl)
+                                .then((response) => response.json())
+                                .then((data) => {
+                                });
+
                             AsyncStorage.setItem('user', JSON.stringify(info)).done(()=> this.navigator.push({name:'homePage'}));
                         }
                     })

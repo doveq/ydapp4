@@ -96,10 +96,17 @@ class Article extends Component
 		//console.log(this.user);
         this.setState({ isSubmit:true, });
 
-        let url = "http://112.124.18.75/api/user/post_comment/?insecure=cool&comment_status=1"
+        let url = "http://112.124.18.75/ydjr/api/user/post_comment/?insecure=cool&comment_status=1"
               +"&post_id=" + this.props.id
               +"&cookie="+ this.user.cookie
               +"&content="+ this.state.inputText;
+
+        url = "http://112.124.18.75/ydjr/api/respond/submit_comment/?post_id=" + this.props.id
+          + "&name=" + this.user.username
+          + "&email=" + this.user.email
+          + "&content=" + this.state.inputText;
+
+        console.log(url);
 
         fetch(encodeURI(url))
             .then((response) => response.json())
@@ -175,7 +182,7 @@ class Article extends Component
 						<Text style={{backgroundColor:'#292C35',color:'#fff',width:50, height:40,paddingTop:10,marginLeft:10,textAlign:'center',borderRadius:5,}}>发表</Text>
 					</TouchableOpacity>
 				</View>
-        
+
         <KeyboardSpacer/>
 
 			</View>

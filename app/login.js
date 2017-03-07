@@ -52,7 +52,7 @@ export default class Login extends Component
 
             this.setState({ isSubmit:true, });
 
-            let url = 'http://112.124.18.75/api/user/generate_auth_cookie/?insecure=cool'
+            let url = 'http://112.124.18.75/ydjr/api/user/generate_auth_cookie/?insecure=cool'
                         +'&seconds=31536000'
                         +'&username='+ this.state.name
                         +'&password='+ this.state.passwd;
